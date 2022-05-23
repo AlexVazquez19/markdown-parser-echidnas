@@ -36,7 +36,7 @@ public class MarkdownParse {
             }
             if (exclamationPoint != openBracket - 1 && openParen == closeBracket + 1) {
                 if (markdown.substring(openParen + 1, closeParen).contains(" ") == false) {
-                    toReturn.add(markdown.substring(openParen + 1, closeParen));
+                    toReturn.add(markdown.substring(openParen + 1, closeParen).trim());
                 }
             }
             currentIndex = closeParen + 1;   
